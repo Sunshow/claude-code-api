@@ -41,6 +41,7 @@ dependencies = [
     "python-jose[cryptography]>=3.3.0",
     "python-dotenv>=1.0.0",
     "openai>=1.0.0",
+    "greenlet>=3.2.3",
 ]
 
 [project.optional-dependencies]
