@@ -8,6 +8,7 @@ from enum import Enum
 
 class ClaudeModel(str, Enum):
     """Available Claude models - matching Claude Code CLI supported models."""
+    OPUS_4_1 = "claude-opus-4-1-20250805"
     OPUS_4 = "claude-opus-4-20250514"
     SONNET_4 = "claude-sonnet-4-20250514"
     SONNET_37 = "claude-3-7-sonnet-20250219"
@@ -215,6 +216,16 @@ def get_default_model() -> str:
 def get_model_info(model_id: str) -> ClaudeModelInfo:
     """Get information about a Claude model."""
     model_info = {
+        ClaudeModel.OPUS_4_1: ClaudeModelInfo(
+            id=ClaudeModel.OPUS_4_1,
+            name="Claude Opus 4.1",
+            description="Latest and most powerful Claude model for complex reasoning and advanced tasks",
+            max_tokens=500000,
+            input_cost_per_1k=15.0,
+            output_cost_per_1k=75.0,
+            supports_streaming=True,
+            supports_tools=True
+        ),
         ClaudeModel.OPUS_4: ClaudeModelInfo(
             id=ClaudeModel.OPUS_4,
             name="Claude Opus 4",
