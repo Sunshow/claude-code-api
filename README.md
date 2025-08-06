@@ -52,6 +52,7 @@ make start
 
 ## Supported Models
 
+- `claude-opus-4-1-20250805` - Claude Opus 4.1 (Most powerful)
 - `claude-opus-4-20250514` - Claude Opus 4 (Most powerful)
 - `claude-sonnet-4-20250514` - Claude Sonnet 4 (Latest Sonnet)
 - `claude-3-7-sonnet-20250219` - Claude Sonnet 3.7 (Advanced)
